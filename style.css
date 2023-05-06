@@ -1,5 +1,5 @@
 :root{
-    --color-primary: #A67A4E;
+    --color-primary: #BF9B88;
     --color-bg: #DECCBA;
 
     --transition: all 300ms ease;
@@ -10,7 +10,7 @@
 }
 
 *{
-    margin: 0;
+    margin: auto;
     padding: 0;
     outline:0;
     border:0;
@@ -25,14 +25,14 @@ body{
     line-height: 1.6;
     color: var(--color-bg);
     overflow-x: hidden;
-    background: var(--color-bg);
+    background: var(--color-primary);
     font-size: 0.9rem;
 }
 
 .container{
     width: var(--container-width-lg);
     max-width: 1800px;
-    margin-inline: auto;
+    margin-inline:auto;
 }
 
 section{
@@ -46,5 +46,106 @@ h1,h2,h3,h4,h5{
 }
 
 h1{
+    font-size: 3rem;
+    margin: 1rem 0;
+}
+
+h2{
+    font-size: 1.7rem;
+    margin: 1rem 0;
+}
+
+h3{
+    font-size: 1.1rem;
+    image-rendering: 0.8rem 0 0.5rem;
+}
+
+h4{
+    font-size:1rem
+}
+
+a{
+    color: white;
+    transition: var(--transition);
+}
+
+img{
+    display: block;
+    width:100%;
+    object-fit: cover;
+}
+
+nav{
+    background: var(--color-bg);
+    width: 100vw;
+    height: 4.5rem;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 1rem 1rem rgba(0,0,0,0.2);
     
 }
+
+nav button{
+    display: none;
+}
+
+.nav_container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.avatar{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+    border:0.3rem solid var(  --color-primary  )
+}
+
+.nav_logo{
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.nav_items{
+    display: flex;
+    align-items: center;
+    gap:4rem;
+}
+
+.nav_profile{
+    position:relative;
+    cursor: pointer;
+
+}
+
+.nav_profile ul{
+    position:absolute;
+    top:125%;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 3rem 3rem rgba(0, 0, 0,0.4);
+    visibility: hidden;
+    background: rgb(190, 169, 169);
+    opacity: 0;
+    transition: var(--transition);
+    
+}
+
+.nav_profile:hover>ul{
+    visibility: visible;
+    opacity: 1;
+}
+
+.nav_profile ul li a{
+   padding: 1.25rem;
+   background: rgb(190, 169, 169);
+   display: block;
+   width: 100%;
+
+}
+
