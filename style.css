@@ -125,12 +125,13 @@ nav button{
 .nav_profile ul{
     position:absolute;
     top:125%;
-    right: 0;
+    right: auto;
     display: flex;
     flex-direction: column;
     box-shadow: 0 3rem 3rem rgba(0, 0, 0,0.4);
     visibility: hidden;
-    background: rgb(190, 169, 169);
+    border-radius: 3px;
+    background: var(--color-bg);
     opacity: 0;
     transition: var(--transition);
     
@@ -139,13 +140,74 @@ nav button{
 .nav_profile:hover>ul{
     visibility: visible;
     opacity: 1;
+    
 }
 
 .nav_profile ul li a{
+   
    padding: 1.25rem;
-   background: rgb(190, 169, 169);
    display: block;
    width: 100%;
+   
 
 }
 
+/* featured post */
+
+.category_button{
+    background: var(--color-bg);
+    color:grey;
+    display:inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 2px;
+    font-weight:600;
+    font-size: 0.8rem;
+    text-align: center;
+    
+}
+
+.category_button:hover{
+    color: white;
+}
+
+.post_thumbnail{
+    border-radius: 100px 0;
+    border:1rem solid #7e6b61;
+    overflow: hidden;
+    margin-bottom: 1.6rem;
+}
+
+.post:hover .post_thumbnail img{
+    filter: saturate(0);
+    transition: filter 500ms ease;
+}
+
+.post_author{
+    display:flex;
+    float:left;
+    gap: 1rem;
+    margin-top: 1.2rem;
+    
+    
+}
+
+.post_author_avatar{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.featured{
+    margin-top: 8rem;
+}
+
+.featured_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+
+.featured .post_thumbnail{
+    height: fit-content;
+}

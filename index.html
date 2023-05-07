@@ -1,38 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lawga Blog</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <nav>
-        <div class="cantainer nav_container">
-            <a href="index.html" class="nav_logo">La<strong style="color:rgb(130, 108, 78); font-size:large">W</strong>ga</a>
-            <ul class="nav_items">
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="signin.html">Signin</a></li>
-                <li class="nav_profile">
-                    <div class="avatar">
-                        <img src="./images/avatar.JPG" alt="avatar">
-                    </div>
-                    <ul>
-                        <li><a href="posts.html">Posts</a></li>
-                        <li><a href="logout.html">Logout</a></li>
-                    </ul>
-                </li>
-
-
+      <div class="cantainer nav_container">
+        <a href="index.html" class="nav_logo"
+          >La<strong style="color: rgb(130, 108, 78); font-size: large"
+            >W</strong
+          >ga</a
+        >
+        <ul class="nav_items">
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="signin.html">Signin</a></li>
+          <li class="nav_profile">
+            <div class="avatar">
+              <img src="./images/avatar.JPG" alt="avatar" />
+            </div>
+            <ul>
+              <li><a href="posts.html">Posts</a></li>
+              <li style="background: var(--color-primary)">
+                <a href="logout.html">Logout</a>
+              </li>
             </ul>
+          </li>
+        </ul>
         <button id="open_nav"><i class="uil uil-bars"></i></button>
         <button id="close_nav"><i class="uil uil-multiply"></i></button>
+      </div>
+    </nav>
+
+    <section class="featured">
+      <div class="container featured_container">
+        <div class="post_thumbnail">
+          <img src="./images/featured.jpg" alt="" />
+        </div>
+        <div class="post_info">
+          <a href="" class="category_button">Enertainment</a>
+          <h2 class="post_title">
+            <a href="viewpost.html"
+              >Lorem ipsum, dolor sit amet consectetur adipisicing elit.</a
+            >
+          </h2>
+          <p class="post_body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+            distinctio ipsam possimus voluptatibus fugit aperiam laboriosam
+            ullam doloribus rem dolorem ut delectus consequatur veniam incidunt
+            illum itaque labore, et vel cum ipsum! Repudiandae commodi
+            cupiditate eius nobis voluptate fuga suscipit, voluptatibus veniam
+            aspernatur in distinctio error a, doloribus possimus consequuntur.
+          </p>
+          <div class="post_author">
+            <div class="post_author_avatar">
+                <img src="./images/avatar.JPG" alt="author pic">
+            </div>
+            <div class="post_author_info">
+                <h5>By: Samuel Tesfaye</h5>
+                <small>May 7, 2023 - 07:23</small>
+
+            </div>
+            
+          </div>
+          
 
         </div>
-    </nav>
-    
-</body>
+      </div>
+    </section>
+  </body>
 </html>
