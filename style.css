@@ -1,6 +1,16 @@
 :root{
-    --color-primary: #BF9B88;
-    --color-bg: #DECCBA;
+    
+    --color-1: #8739f9;
+    --color-2: #c651cd;
+    --color-3: #363636;
+    --color-dark1: #100f10;
+    --color-dark2: #1b1b1b;
+    --color-dark3: #242424;
+    --font-bright1: white;
+    --font-bright2: rgb(200, 200, 200);
+    --font-bright3: rgba(#fff,0.45);
+
+
 
     --transition: all 300ms ease;
 
@@ -25,7 +35,7 @@ body{
     line-height: 1.6;
     color: var(--color-bg);
     overflow-x: hidden;
-    background: var(--color-primary);
+    background: var(--color-3);
     font-size: 0.9rem;
 }
 
@@ -76,7 +86,7 @@ img{
 }
 
 nav{
-    background: var(--color-bg);
+    background: var(--color-dark3);
     width: 100vw;
     height: 4.5rem;
     position: fixed;
@@ -102,7 +112,7 @@ nav button{
     height: 2.5rem;
     border-radius: 50%;
     overflow: hidden;
-    border:0.3rem solid var(  --color-primary  )
+    border:0.3rem solid var(  --color-dark1  )
 }
 
 .nav_logo{
@@ -131,7 +141,7 @@ nav button{
     box-shadow: 0 3rem 3rem rgba(0, 0, 0,0.4);
     visibility: hidden;
     border-radius: 3px;
-    background: var(--color-bg);
+    background: var(--color-dark3);
     opacity: 0;
     transition: var(--transition);
     
@@ -149,14 +159,15 @@ nav button{
    display: block;
    width: 100%;
    
+   
 
 }
 
 /* featured post */
 
 .category_button{
-    background: var(--color-bg);
-    color:grey;
+    background: var(--color-1) ;
+    color:var(--font-bright2);
     display:inline-block;
     padding: 0.5rem 1rem;
     border-radius: 2px;
@@ -172,7 +183,7 @@ nav button{
 
 .post_thumbnail{
     border-radius: 100px 0;
-    border:1rem solid #7e6b61;
+    border:1rem solid var(--color-dark3);
     overflow: hidden;
     margin-bottom: 1.6rem;
 }
