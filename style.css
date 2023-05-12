@@ -33,7 +33,7 @@
 body{
     font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
-    color: var(--color-bg);
+    color: white;
     overflow-x: hidden;
     background: var(--color-3);
     font-size: 0.9rem;
