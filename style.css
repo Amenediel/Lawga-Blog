@@ -235,6 +235,7 @@ nav button{
 }
 
 .category_buttons{
+    
     padding: 4rem 0;
     border-top: 2px solid grey;
     border-bottom: 2px solid grey;
@@ -243,8 +244,12 @@ nav button{
 .category_buttons-container{
     width:fit-content;
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+}
+
+.category_button{
+    width:inherit;
 }
 
 footer{
@@ -403,8 +408,24 @@ footer{
         border:0;
      }
 
+     .featured_container{
+        gap: 3rem;
+        
+     }
+
+     .category_buttons-container{
+        grid-template-columns: 1fr 1fr 1fr;
+     }
+
+     .posts_container{
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+     }
+
+
 
 
 
       
 }
+@media screen and (max-width: 600px){}
