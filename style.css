@@ -185,7 +185,7 @@ nav button{
 }
 
 .post_thumbnail{
-    border-radius: 100px 0;
+    border-radius: 50px 50px;
     border:1rem solid var(--color-dark3);
     overflow: hidden;
     margin-bottom: 1.6rem;
