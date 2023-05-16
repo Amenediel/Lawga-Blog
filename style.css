@@ -381,6 +381,14 @@ footer{
     line-height: 1.7rem;
 }
 
+.category_title{
+    height:15rem;
+    margin-top: 4.5rem;
+    background: var(--color-dark2);
+    display: grid;
+    place-items: center;
+}
+
 /*tablet*/
 @media screen and (max-width: 1024px) {
     .container{
