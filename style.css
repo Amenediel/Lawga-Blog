@@ -189,7 +189,7 @@ nav button {
 }
 
 .post_thumbnail {
-    border-radius: 30px 50px;
+    border-radius: 15px 15px;
     border: 2px solid cyan;
     overflow: hidden;
     margin-bottom: 1.6rem;
@@ -229,6 +229,17 @@ nav button {
 .featured .post_thumbnail {
     height: fit-content;
 
+}
+
+.posts .post_thumbnail{
+    height: 40vh;
+    width:40vh;
+}
+
+.posts .post_thumbnail img{
+    width: 100%; 
+    height:100%;
+  object-fit: cover;
 }
 
 .posts_container {
