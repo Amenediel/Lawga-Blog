@@ -409,6 +409,10 @@ footer {
     place-items: center;
 }
 
+.section_extra-margin{
+    margin-top: 7rem;
+}
+
 /*==================================Form============================================================*/
 
 
@@ -486,7 +490,9 @@ label {
 
 
 
-
+.alert_message.lg{
+    text-align: center;
+}
 
 /* Button Styles */
 
