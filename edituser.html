@@ -21,16 +21,23 @@
     <section class="form_section">
 
         <div class="container form_section-container">
-            <h2>Sign In</h2>
-            <div class="alert_message success">
+            <h2>Edit User</h2>
+            <div class="alert_message error">
                 <p>This is an error message</p>
             </div>
-            <form action="">
-                <input type="text" placeholder="Username">
-                <input type="text" placeholder="Password">
+            <form action="" enctype="multipart/form-data">
+                <input type="text" placeholder="First Name">
+                <input type="text" placeholder="Last Name">
+                Select Role
+                <select >
+                    <option value="" disabled selected>Select user type</option>
+                    <option value="0">Author</option>
+                    <option value="1">Admin</option>
+                    
+                </select>
                 
-                <button type="submit" class="btn">Sign In</button>
-                <small>Don't have an account? <a href="signup.html">Sign Up</a></small>
+               
+                <button type="submit" class="btn">Update User</button>
             </form>
         </div>
 
